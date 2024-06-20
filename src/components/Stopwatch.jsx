@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 
+import SomeList from "./SomeList";
+
 const Stopwatch = () => {
   const [currentTime, setCurrentTime] = useState(0);
 
@@ -23,8 +25,11 @@ const Stopwatch = () => {
   }, []);
 
   return (
-    <div className="time">
-      <p>{timeConversion(currentTime)}</p>
+    <div>
+      <div className="time">
+        <p>{timeConversion(currentTime)}</p>
+      </div>
+      <SomeList currentTime={timeConversion(currentTime)} />
     </div>
   );
 };

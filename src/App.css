@@ -39,6 +39,7 @@ img {
 .time {
   text-align: center;
   margin-top: 70px;
+  margin-bottom: 70px;
   width: 300px;
   padding: 10px;
   background-color: rgb(255, 242, 129);
@@ -47,4 +48,32 @@ img {
   font-weight: 700;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   box-shadow: 0 0 30px;
+}
+
+.stopwatch-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.stopwatch-buttons button {
+  height: 40px;
+  width: 150px;
+  background: rgb(218, 255, 218);
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  &:hover {
+    background: rgb(145, 248, 171);
+  }
+  &:active {
+    font-size: 17px;
+  }
+}
+
+.values {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
